@@ -1,0 +1,50 @@
+.customers-section {
+  @extend %section;
+}
+
+.customers-title {
+  @extend %title;
+}
+
+.customers-list {
+  @media screen and (max-width: 1157px) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+  @media screen and (min-width: $tablet) {
+    column-gap: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+.customers-item {
+  height: 88px;
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+.customers-link {
+  @extend %link;
+  @include centeredFlex();
+  height: 100%;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: $customers-link-clr;
+  @media screen and (min-width: $desktop) {
+    transition: color $transition;
+    &:is(:hover, :focus) {
+      color: $active-state-clr;
+    }
+  }
+}
+
+.customers-icon {
+  fill: currentColor;
+}

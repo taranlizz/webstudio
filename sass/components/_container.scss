@@ -1,0 +1,22 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    width: 428px;
+    &.mob-special {
+      padding: 0 82px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1157px) {
+    width: 768px;
+    &.tab-special {
+      padding: 0 108px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1158px;
+  }
+}

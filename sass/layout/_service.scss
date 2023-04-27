@@ -1,0 +1,16 @@
+.service-section {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-bottom: 120px;
+  }
+}
+.service-title {
+  @extend %title;
+  margin-bottom: 72px;
+}
+
+.service-list {
+  @include centeredFlex();
+  gap: 24px;
+}

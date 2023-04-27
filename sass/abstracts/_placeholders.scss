@@ -1,0 +1,48 @@
+%link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+%section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+%button {
+  padding: 0;
+  display: inline-block;
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+%text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: $second-txt-clr;
+}
+
+%subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+%title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}

@@ -1,0 +1,109 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $light-accent;
+  box-shadow: $studio-shadow;
+  @media screen and (min-width: $tablet) and (max-width: 1157px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.header-container {
+  display: flex;
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+  }
+}
+
+.header-navigation {
+  @media screen and (min-width: $tablet) {
+    @include centeredFlex();
+  }
+}
+
+.header-logo {
+  @media screen and (min-width: $tablet) {
+    margin-right: 120px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 76px;
+  }
+}
+
+.navigation-list {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.navigation-item {
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.navigation-link {
+  @extend %link;
+  @extend %text;
+  @media screen and (min-width: $tablet) {
+    display: inline;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 28px;
+  }
+  @media screen and (min-width: $desktop) {
+    transition: color $transition;
+    &:is(:hover, :focus) {
+      color: $active-state-clr;
+    }
+  }
+}
+
+.header-address {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.header-address-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.header-address-item {
+  @media screen and (min-width: $tablet) and (max-width: 1157px) {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.header-tel,
+.header-mail {
+  @extend %link;
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: $second-txt-clr;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color $transition;
+    &:is(:hover, :focus) {
+      color: $active-state-clr;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.header-logo,
+.footer-logo {
+  @extend %link;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  @media screen and (max-width: 767px){
+  text-align: center; 
+  }
+
+  margin-bottom: 16px;
+}
+
+.web {
+  color: $accent;
+}
+
+.studio {
+  color: $footer-txt-clr;
+}
