@@ -11,11 +11,13 @@ function handleFilterClick(evt) {
     return;
   }
 
+  const category = evt.target.textContent.toLowerCase();
+
   const items = Array.from(refs.workItems).filter((work) => {
-    if (evt.target.textContent === "All") {
+    if (evt.target.textContent === "all") {
       return work;
     }
-    return work.dataset.category === evt.target.textContent.toLowerCase();
+    return work.dataset.category === category;
   });
 
   refs.workList.innerHTML = "";
