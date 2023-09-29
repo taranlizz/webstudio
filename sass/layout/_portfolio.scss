@@ -28,9 +28,6 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 72px;
   }
-  // display: flex;
-  // margin-bottom: 72px;
-  // gap: 24px;
 }
 
 .portfolio-list {
@@ -45,9 +42,17 @@
 .portfolio-item {
   @media screen and (max-width: 767px) {
     margin: 0 auto;
-    width: 396px;
+    max-width: 396px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
-  flex-basis: calc((100% - 48px) / 2);
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 .portfolio-link {

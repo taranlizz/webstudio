@@ -64,7 +64,7 @@
       <section class="portfolio">
         <div class="container">
           <h1 class="portfolio-title visually-hidden">Portfolio</h1>
-          <ul class="portfolio-filter list">
+          <ul class="portfolio-filter list js-filter">
             <li>
               <button class="filter-btn button" type="button">All</button>
             </li>
@@ -81,11 +81,15 @@
               <button class="filter-btn button" type="button">Marketing</button>
             </li>
           </ul>
-          <ul class="portfolio-list">
-            <li class="porfolio-item">
-              <a class="portfolio-link" href="#">
+          <ul class="portfolio-list js-list">
+            <li class="portfolio-item" data-category="app">
+              <a class="portfolio-link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/bankapp.jpg   1x,
+                      ./images/portfolio/bankapp@2.jpg 2x
+                    "
                     src="./images/portfolio/bankapp.jpg"
                     alt="bank app"
                     width="360"
@@ -107,10 +111,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="marketing">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/payment.jpg   1x,
+                      ./images/portfolio/payment@2.jpg 2x
+                    "
                     src="./images/portfolio/payment.jpg"
                     alt="payment app"
                     width="360"
@@ -130,10 +138,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="app">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/medit.jpg   1x,
+                      ./images/portfolio/medit@2.jpg 2x
+                    "
                     src="./images/portfolio/medit.jpg"
                     alt="meditation app"
                     width="360"
@@ -153,10 +165,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="marketing">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/taxi.jpg   1x,
+                      ./images/portfolio/taxi@2.jpg 2x
+                    "
                     src="./images/portfolio/taxi.jpg"
                     alt="taxi app"
                     width="360"
@@ -176,10 +192,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="design">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/screen.jpg   1x,
+                      ./images/portfolio/screen@2.jpg 2x
+                    "
                     src="./images/portfolio/screen.jpg"
                     alt="phone wallpapers"
                     width="360"
@@ -201,10 +221,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="marketing">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/courses.jpg   1x,
+                      ./images/portfolio/courses@2.jpg 2x
+                    "
                     src="./images/portfolio/courses.jpg"
                     alt="woman smiles"
                     width="360"
@@ -224,10 +248,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="design">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/stories.jpg   1x,
+                      ./images/portfolio/stories@2.jpg 2x
+                    "
                     src="./images/portfolio/stories.jpg"
                     alt="instagram stories template"
                     width="360"
@@ -249,10 +277,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="web site">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/food.jpg   1x,
+                      ./images/portfolio/food@2.jpg 2x
+                    "
                     src="./images/portfolio/food.jpg"
                     alt="bag with fruits"
                     width="360"
@@ -272,10 +304,14 @@
                 </div>
               </a>
             </li>
-            <li class="porfolio-item">
+            <li class="portfolio-item" data-category="web site">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay-wrap">
                   <img
+                    srcset="
+                      ./images/portfolio/coffee.jpg   1x,
+                      ./images/portfolio/coffee@2.jpg 2x
+                    "
                     src="./images/portfolio/coffee.jpg"
                     alt="coffee"
                     width="360"
@@ -364,5 +400,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/filters.js"></script>
   </body>
 </html>
