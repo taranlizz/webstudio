@@ -12,13 +12,15 @@ function handleFilterClick(evt) {
   }
 
   const category = evt.target.textContent.toLowerCase();
+  let items = [];
 
-  const items = Array.from(refs.workItems).filter((work) => {
-    if (evt.target.textContent === "all") {
-      return work;
-    }
-    return work.dataset.category === category;
-  });
+  if (category === "all") {
+    items = refs.workItems;
+  } else {
+    items = Array.from(refs.workItems).filter((work) => {
+      return work.dataset.category === category;
+    });
+  }
 
   refs.workList.innerHTML = "";
   items.forEach((item) => refs.workList.append(item));
